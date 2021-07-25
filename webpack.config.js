@@ -10,8 +10,10 @@ var config = {
 
   // 设置服务器端口号
   devServer: {
+    disableHostCheck: true,	  
     inline: true,
-    port: 7777
+    port: 80,
+    host: '0.0.0.0'
   },
 
   // 配置模块的处理逻辑，用loaders定义加载器
